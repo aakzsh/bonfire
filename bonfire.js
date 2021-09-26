@@ -1,5 +1,6 @@
 const ytSection = document.querySelector('.yt-video')
 const playBtn = document.querySelector('.play-btn')
+const resetBtn = document.querySelector('.reset-btn')
 
 window.addEventListener('load', (e) => {
     const id = window.location.href.split("=")[1];
@@ -8,20 +9,20 @@ window.addEventListener('load', (e) => {
     ytSection.innerHTML += `
 
             <iframe class="a"
-            src="https://www.youtube.com/embed/${id}">
+            src="https://www.youtube.com/embed/${id}"  allow='autoplay'>
             </iframe> 
             <div class="flex-em">
               <iframe class="b"
-                src="https://www.youtube.com/embed/${id}">
+                src="https://www.youtube.com/embed/${id}" allow='autoplay'>
               </iframe> 
               <div class="space"></div>
               <iframe class="c"
-                src="https://www.youtube.com/embed/${id}">
+                src="https://www.youtube.com/embed/${id}" allow='autoplay'>
               </iframe> 
             </div>
             
             <iframe class="d"
-            src="https://www.youtube.com/embed/${id}">
+            src="https://www.youtube.com/embed/${id}" allow='autoplay'>
             </iframe> 
        
        
@@ -40,6 +41,15 @@ window.addEventListener('load', (e) => {
       c.src += '?autoplay=1'
       d.src += '?autoplay=1'
     })
+
+    resetBtn.addEventListener('click', e => {
+      e.preventDefault()
+      a.src = a.src.split("?")[0]
+      b.src = b.src.split("?")[0]
+      c.src = c.src.split("?")[0]
+      d.src = d.src.split("?")[0]
+    })
+
 
 
 })
