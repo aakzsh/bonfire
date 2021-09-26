@@ -4,19 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bonfire</title>
+    <title>3Dfy - Home</title>
+    <link rel="icon" href="lg.svg" type="image/x-icon"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form>
+    <nav class="navbar navbar-inverse navbar-custom " >
+        <div class="container-fluid" >
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+      
+            <a class="navbar-brand" href="#"><div class="debug"><img src="lg.svg" alt="" ></div></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                  <li><a href="#">3dfy</a></li>
+                </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Home</a></li>
+              <li class="sign-up"><a href="home.html">Explore</a></li>
+              <li class="login"><a href="video.html">Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    <center><form class="formclass">
 
         <p>
-            Enter youtube url <br/>
-            <input class="url-input" type="text" name="url" value=""/>
+            
+            <input class="url-input" type="text" name="url" value="" placeholder="Enter youtube url" style="background-color: 
+            rgba(52, 53, 59, 1); width: 40%; height: 4rem; border:none; padding-left: 1rem;  " />
+            <button class="go-btn" style="background-color: 
+            rgba(255, 232, 197, 1); height: 4rem; width: 5rem; color: black;">GO</button>
         </p>
-        <button class="go-btn">GO</button>
+        
 
-    </form>
+    </form></center>
     <script src="index.js"></script>
 </body>
 </html>

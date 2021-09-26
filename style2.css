@@ -1,0 +1,39 @@
+.navbar-custom {
+    background-color: #0B0A0A;
+    height: 10rem;
+   
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: white;
+}
+
+.navbar {
+  font-size: 2.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.debug {
+    height: 100%;
+    /* background-color: red; */
+  }
+  
+  .debug img {
+  
+      text-align: center;
+      height: 4rem;
+      width: auto;
+  }
+  
+  body {
+  
+    width: 100%;
+    background-color: #0B0A0A;
+    padding-top: 4rem;
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+  
+  

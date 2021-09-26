@@ -8,8 +8,9 @@ goBtn.addEventListener('click', (e) => {
     const value = urlInput.value
     const url = value.split("=")[1]
 
-    const current_url = window.location.href
-
-    const redirect_url = current_url+'bonfire.html?url='+url
+    const current_url = window.location.href;
+    console.log(current_url)
+const len = current_url.length;
+    const redirect_url = current_url.substring(0,len-9)+'bonfire.html?url='+url
     window.location.href = redirect_url
 })
