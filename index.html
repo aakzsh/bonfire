@@ -5,18 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonfire</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form>
 
-        <p>
-            Enter youtube url <br/>
-            <input class="url-input" type="text" name="url" value=""/>
-        </p>
-        <button class="go-btn">GO</button>
+  <nav class="navbar navbar-inverse navbar-custom " >
+  <div class="container-fluid" >
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
 
-    </form>
-    <script src="index.js"></script>
+      <a class="navbar-brand" href="#"><div class="debug"><img src="lg.svg" alt="" ></div></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li><a href="#">3dfy</a></li>
+          </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li class="sign-up"><a href="home.html">Explore</a></li>
+        <li class="login"><a href="video.html">Demo</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="container">
+      <div class="left">
+        <h2>Reimagining world through hologram lens.</h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, faucibus leo et malesuada. Dignissim lacus vel viverra sed vulputate sit purus convallis</p>
+        <br><br><br>
+      <button><a href="home.html">Explore</a></button>
+      </div>
+      <div class="right">
+        <img src="is.svg" alt="">
+      </div>
+    </div>
+
 </body>
 </html>
