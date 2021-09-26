@@ -36,7 +36,9 @@ window.addEventListener('load', (e) => {
     playBtn.addEventListener('click', e => {
       e.preventDefault()
       a.src += '?autoplay=1'
-      console.log(a.src)
+      b.src += '?autoplay=1'
+      c.src += '?autoplay=1'
+      d.src += '?autoplay=1'
     })
 
 
